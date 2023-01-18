@@ -7,29 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,
+              600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <link rel="stylesheet" href="styles.css">
+
   <h1 id="title">Survey Form</h1>
   <p id="description">Please fill this form</p>
-  <form id="survey-form" value=""> Kindly fill the form well
-    <select id="dropdown">
-
-    </select>
-    <input id="name" type="text" label="name-label" placeholder="Name"></input>
-    <input id="email" label="email-label" placeholder="Email"></input>
-    <input id="number" label="number-label" placeholder="Number"></input><br>
-
-    <input type="radio" name="name">Name</input>
+  <form id="survey-form" value=""> Kindly fill the form well.
     <br>
-    <input type="radio" name="name">Number</input>
+    <select names="forms" id="dropdown">
+      <option value="select">select</option>
+      <option value="farm">farm</option>
+      <option value="staduim">staduim</option>
+    </select>
     <br><br>
-    <input type="checkbox" value=""></input>
-    <input type="checkbox"></input>
-    <input type="checkbox"></input>
-    <input type="checkbox"></input>
+    <label id="name-label">Name<br>
+      <input id="name" type="text" required placeholder="Name"></input>
+    </label>
+
+    <br><br>
+
+    <label id="email-label">Email Address<br>
+      <input id="email" required label="email-label" placeholder="Email" type="email"></input>
+    </label>
+
+    <br><br>
+
+    <label id="number-label"> Telehone Number<br>
+      <input id="number" required label="number-label" placeholder="Number" type="number" min="1234" max="123454678910">
+    </label>
+
+    </input><br></br>
+
+    <input type="radio" value="new" name="name">Name</input>
+    <br>
+    <input type="radio" value="old" name="name">Number</input>
+    <br><br>
+    <input type="checkbox" value="first"></input>
+    <input type="checkbox" value="second"></input>
+    <input type="checkbox" value="third"></input>
+    <input type="checkbox" value="fourth"></input><br>
+    <textarea></textarea><br><br>
     <button id="submit" type="submit">Submit</button>
   </form>
+
 
 </body>
 
